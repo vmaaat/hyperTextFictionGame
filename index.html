@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up, Up, and Away!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            background: rgb(1, 13, 29);
+            padding: 95px 320px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="start-menu">
+        <img src="./img/upUpAndAway.png">
+        <form id="start-form">
+            <label for="player-name">Enter your player name:</label>
+            <input type="text" id="player-name" name="player-name" required>
+            <button type="submit">Play Game</button>
+        </form>
+        <button id="save-button">Save Progress</button>
+    </div>
+    <div id="import-menu">
+        <h2>Previous Saves</h2>
+        <input type="file" id="import-json" accept=".json">
+        <button id="import-button">Import</button> 
+        <ul id="imported-data-list"></ul>
+        <button id="delete-button">Clear Previous Saves</button>
+    </div>
+    <div id="description-menu">
+        <h2>Description:</h2>
+        <p>'Up, Up and Away!' is a platformer</p>
+        <p>where players guide an exiled king</p>
+        <p>through different levels to</p>
+        <p>help him reclaim his castle!</p>
+    </div>
+
+    <canvas id="game-canvas" style="display: none;"></canvas>
+    <button id="back-button" style="display: none;">Back to Menu</button>
+
+    <div id="timer" class="timer">0:00</div>
+    <div id="player-name-display"></div>
+
+    <canvas></canvas>
+
+    <script src="script.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes/CollisionBlock.js"></script>
+    <script src="./js/classes/Sprite.js"></script>
+    <script src="./js/classes/Player.js"></script>
+    <script src="./js/data/collisions.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

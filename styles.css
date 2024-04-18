@@ -1,0 +1,103 @@
+#start-menu {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+#import-menu {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+#description-menu {
+    position: absolute;
+    top: 45%;
+    left: 20.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+#start-form {
+    margin-top: 20px;
+}
+
+#player-name {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: white;
+    background-color: #002d5c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+button:hover {
+    background-color: #003f83;
+    transition: all 0.3 ease;
+    scale: 1.01;
+}
+
+button:active {
+    background-color: #003874;
+    scale: 0.99;
+}
+
+#delete-button:hover {
+    background-color: rgb(215, 94, 94);
+    transition: all 0.3 ease;
+    scale: 1.01;
+}
+
+#delete-button:active {
+    background-color: rgb(226, 44, 44);
+    scale: 0.99;
+}
+
+#timer {
+    color: white; 
+    display: none; 
+    position: absolute;
+    top: 70px;
+    left: 320px;
+    font-size: 20px;
+}
+
+#player-name-display {
+    color: white;
+    position: absolute;
+    top: 70px;
+    right: 305px;
+    font-size: 20px;
+}
+
+#back-button {
+    position: absolute; 
+    bottom: 95px;
+    right: 303px;
+    display: none;
+}
+
